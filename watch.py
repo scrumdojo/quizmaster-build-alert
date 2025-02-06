@@ -1,6 +1,13 @@
 import requests
 import time
-from playsound import playsound
+import pygame
+
+def playsound(file):
+    pygame.mixer.init()
+    pygame.mixer.music.load(file)
+    pygame.mixer.music.play()
+    while pygame.mixer.music.get_busy():  # Wait for the sound to finish playing
+        time.sleep(0.1)
 
 with open('github-token.txt', 'r') as file:
     GITHUB_TOKEN = file.read().strip()

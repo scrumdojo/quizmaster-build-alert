@@ -14,13 +14,5 @@ Save the token to github-token.txt
 ## Install dependencies
 
 ```
-pip install playsound
-```
-
-If the install fails, run this (see [playsound/issues/150](https://github.com/TaylorSMarks/playsound/issues/150) for more):
-
-```
-pip install wheel
-pip install setuptools
-pip install playsound
+pip install pygame
 ```
